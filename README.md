@@ -80,8 +80,7 @@ Tour Chiloe Tradicional;Chiloe;25000
 ---
 
 ## 🔗 Repositorio GitHub
-
-Agregar aquí el enlace del repositorio.
+https://github.com/KelitaDuoc/llanquihue-tour
 
 ---
 
