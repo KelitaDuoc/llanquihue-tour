@@ -3,3 +3,4 @@ Tour Lago Llanquihue;Llanquihue;12000
 Tour Paseo Frutillar;Frutillar;25000
 Tour Puerto Montt;Puerto Montt;30000
 Tour Chiloe Tradicional;Chiloe;25000
+Tour Completo;Frutillar;0

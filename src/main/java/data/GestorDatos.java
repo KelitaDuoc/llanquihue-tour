@@ -1,5 +1,6 @@
 package data;
 import model.Tour;
+import model.Guia;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -9,9 +10,7 @@ import java.nio.file.Path;
 import java.util.ArrayList;
 
 public class GestorDatos {
-
     public ArrayList<Tour> cargarTours(Path rutaArchivo) throws IOException {
-
         ArrayList <Tour> listaTour = new ArrayList();
 
          try (BufferedReader lector = Files.newBufferedReader(rutaArchivo, StandardCharsets.UTF_8)){
@@ -33,19 +32,16 @@ public class GestorDatos {
                     String destino = campos[1].trim();
                     int precio = Integer.parseInt(campos[2].trim());
 
-                    Tour tour = new Tour(nombre, destino, precio);
+                    Guia guia = new Guia("Juan Pérez", "Turismo regional");
+                    Tour tour = new Tour(nombre, destino, precio, guia);
 
                     listaTour.add(tour);
-
                 } catch (IllegalArgumentException e) {
 
                     System.err.println("Se omite linea " + numeroLinea + ": " + e.getMessage());
                 }
-
-
             }
          }
-
         return listaTour;
     }
 }
